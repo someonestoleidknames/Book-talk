@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ranger's Apprentice The Ruins of Gorlan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+          
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            
+           
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px 0;
+           
+            
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border-style: none;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Ranger's Apprentice The Ruins of Gorlan</h1>
+        <p>You need to enter the correct phrase to escape!</p>
+        <input id="answer" autocomplete="off">
+        <button onclick ="myFunction()">Submit</button>
+        <p></p>
+    </div>
+    
+</body>
+<footer>
+<script>
+    console.log('hello');
+
+    function myFunction() {
+        var answer=document.getElementById("answer").value;
+        console.log(answer);
+        // check that answer is correct
+        if(answer.trim().toLowerCase()=="in the horse stable"){
+            console.log("you win");
+            window.location.href = "win.html"
+            // go to winning page
+        } else {
+            console.log("you lose");
+            window.location.href = "lose.html"
+            // show message on screen that says try again
+        }
+    }
+
+</script>
+</footer>
+</html>
