@@ -43,8 +43,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>The Ranger's Apprentice The Ruins of Gorlan</h1>
-        <p>You need to enter the correct phrase to escape!</p>
+        <h1>The Quest to Find the Mysterious Craftmaster</h1>
+        <p>You need to enter the correct phrase to find halt!</p>
         <input id="answer" autocomplete="off">
         <button onclick ="myFunction()">Submit</button>
         <p></p>
@@ -59,7 +59,7 @@
         var answer=document.getElementById("answer").value;
         console.log(answer);
         // check that answer is correct
-        if(answer.trim().toLowerCase()=="in the horse stable"){
+        if(answer.trim().toLowerCase()=="at the horse stable"){
             console.log("you win");
             window.location.href = "win.html"
             // go to winning page
